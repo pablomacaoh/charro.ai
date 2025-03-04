@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { Menu, X, Hat } from 'lucide-react';
+import { Menu, X, GraduationCap } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-8 flex items-center justify-between">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2">
-          <Hat className="h-7 w-7 text-charro-800" strokeWidth={2} />
+          <GraduationCap className="h-7 w-7 text-charro-800" strokeWidth={2} />
           <span className="font-display text-2xl font-bold tracking-tight">
             Charro
           </span>
