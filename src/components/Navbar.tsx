@@ -1,13 +1,11 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { Menu, X, Compass } from 'lucide-react';
+import { Menu, X, Compass, MessageCircle } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  // Change navbar style on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
@@ -35,7 +33,6 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-6 md:px-8 flex items-center justify-between">
-        {/* Logo */}
         <a href="#home" className="flex items-center gap-2">
           <Compass className="h-7 w-7 text-charro-800" strokeWidth={2} />
           <span className="font-display text-2xl font-bold tracking-tight">
@@ -43,7 +40,6 @@ const Navbar = () => {
           </span>
         </a>
 
-        {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
           {navLinks.map((link) => (
             <a
@@ -56,7 +52,6 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Mobile Menu Button */}
         <button
           className="md:hidden text-charro-800"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -65,7 +60,6 @@ const Navbar = () => {
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
-        {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 glass-effect border-t border-gray-100 animate-fade-in">
             <div className="container mx-auto px-6 py-4">
