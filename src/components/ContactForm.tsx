@@ -132,7 +132,7 @@ const ContactForm = () => {
                 className="w-full bg-accent hover:bg-accent/90 text-white"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Envia"}
+                {isSubmitting ? "Sending..." : "Enviar"}
               </Button>
             </form>
           </div>
