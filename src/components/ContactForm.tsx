@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { db } from '@/lib/firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -20,19 +22,34 @@ const ContactForm = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Save data to Firebase Firestore
+      await addDoc(collection(db, "contactSubmissions"), {
+        ...formData,
+        createdAt: serverTimestamp()
+      });
+      
       toast({
         title: "¡Mensaje enviado!",
-        description: "Nos comunicamremos lo antes posible.",
+        description: "Nos comunicaremos lo antes posible.",
       });
+      
+      // Reset form after successful submission
       setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error("Error submitting form: ", error);
+      toast({
+        title: "Error",
+        description: "Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -132,7 +149,7 @@ const ContactForm = () => {
                 className="w-full bg-accent hover:bg-accent/90 text-white"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Enviar"}
+                {isSubmitting ? "Enviando..." : "Enviar"}
               </Button>
             </form>
           </div>
