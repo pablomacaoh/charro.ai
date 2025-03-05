@@ -5,33 +5,33 @@ const Services = () => {
   const services = [
     {
       icon: <Monitor className="h-6 w-6" />,
-      title: "Web Development",
-      description: "Custom websites and web applications built with cutting-edge technologies focused on performance and user experience."
+      title: "Adopción de IA",
+      description: "Impulsamos la innovación en tu negocio mediante estrategias personalizadas de IA."
     },
     {
       icon: <LineChart className="h-6 w-6" />,
-      title: "Digital Strategy",
-      description: "Data-driven strategies to optimize your digital presence, increase engagement, and drive business growth."
+      title: "Integración de sistemas",
+      description: "Conectamos y personalizamos tus sistemas para maximizar la eficiencia de tu operacion."
     },
     {
       icon: <Database className="h-6 w-6" />,
-      title: "Data Analysis",
-      description: "Transform raw data into meaningful insights that inform business decisions and identify opportunities."
+      title: "Comunicación empresarial vía WhatsApp",
+      description: "Fortalecemos la interacción corporativa implementando soluciones integradas de WhatsApp."
     },
     {
       icon: <Wrench className="h-6 w-6" />,
-      title: "IT Consulting",
-      description: "Expert guidance on technology implementation, system architecture, and digital transformation."
+      title: "Consultoría de herramientas",
+      description: "Evaluamos tus procesos y tecnologías actuales para identificar oportunidades de automatización y optimización, reduciendo tiempos y costos con soluciones de Software (SaaS)."
     },
     {
       icon: <Globe className="h-6 w-6" />,
-      title: "Digital Marketing",
-      description: "Comprehensive marketing solutions to increase brand visibility and connect with your target audience."
+      title: "Marketing Digital",
+      description: "Revolucionamos la presencia de tu marca en el entorno digital mediante estrategias innovadoras que impulsan el engagement y generan resultados medibles."
     },
     {
       icon: <Zap className="h-6 w-6" />,
-      title: "Process Automation",
-      description: "Streamline operations with custom automation solutions that save time and reduce costs."
+      title: "Automatización",
+      description: "Optimiza tus procesos mediante soluciones tecnológicas que liberan recursos, reducen costos y aceleran tu productividad."
     }
   ];
 
