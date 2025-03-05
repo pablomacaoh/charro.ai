@@ -39,7 +39,7 @@ const Navbar = () => {
         <a href="#home" className="flex items-center gap-2">
           <Compass className="h-7 w-7 text-charro-800" strokeWidth={2} />
           <span className="font-display text-2xl font-bold tracking-tight">
-            Charro
+            Charro.ai
           </span>
         </a>
 
