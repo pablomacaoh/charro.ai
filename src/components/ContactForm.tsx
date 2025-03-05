@@ -9,7 +9,7 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
+    nombre: '',
     email: '',
     message: '',
   });
