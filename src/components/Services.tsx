@@ -41,7 +41,7 @@ const Services = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider text-charro-700 uppercase bg-charro-100 rounded-full">
-            ¿Qué hacemos?
+            ¿Cómo te podemos ayudar?
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-charro-900 mb-4">
             Nuestros Servicios
