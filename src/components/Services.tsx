@@ -1,6 +1,5 @@
 
 import { Monitor, LineChart, Database, Wrench, Globe, Zap, Rss} from 'lucide-react';
-import { MessageCircle } from 'lucide-react';
 
 const Services = () => {
   const services = [
