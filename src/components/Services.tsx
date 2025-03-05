@@ -40,13 +40,13 @@ const Services = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider text-charro-700 uppercase bg-charro-100 rounded-full">
-            What We Offer
+            ¿Qué hacemos?
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-charro-900 mb-4">
-            Our Services
+            Nuestros Servicios
           </h2>
           <p className="max-w-2xl mx-auto text-charro-600">
-            We provide end-to-end digital solutions tailored to your unique business needs
+            Impulsamos la transformación digital de tu negocio con soluciones integrales, diseñadas especialmente para satisfacer tus necesidades únicas.
           </p>
         </div>
 
