@@ -1,5 +1,5 @@
 
-import { Monitor, LineChart, Database, Wrench, Globe, Zap, message-circle } from 'lucide-react';
+import { Monitor, LineChart, Database, Wrench, Globe, Zap, Message-circle as Message } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -14,7 +14,7 @@ const Services = () => {
       description: "Conectamos y personalizamos tus sistemas para maximizar la eficiencia de tu operacion."
     },
     {
-      icon: <message-circle className="h-6 w-6" />,
+      icon: <Message className="h-6 w-6" />,
       title: "Comunicación empresarial vía WhatsApp",
       description: "Fortalecemos la interacción corporativa implementando soluciones integradas de WhatsApp."
     },
