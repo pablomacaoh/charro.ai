@@ -23,8 +23,8 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'Services', href: '#services' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Servicios', href: '#services' },
+    { name: 'Contacto', href: '#contact' },
   ];
 
   return (
