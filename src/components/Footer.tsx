@@ -8,15 +8,15 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <a href="#home" className="font-display text-xl font-bold tracking-tight text-charro-900">
-              Charro
+              Charro.ai
             </a>
             <p className="text-sm text-charro-600 mt-1">
-              Digital Services & Consulting
+              Servicios y Consultoría digital
             </p>
           </div>
           
           <div className="text-sm text-charro-600">
-            © {currentYear} Charro. All rights reserved.
+            © {currentYear} Charro.ai All rights reserved.
           </div>
         </div>
       </div>
