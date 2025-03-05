@@ -15,7 +15,7 @@ const Services = () => {
       description: "Conectamos y personalizamos tus sistemas para maximizar la eficiencia de tu operacion."
     },
     {
-      icon: <MessageCircle className="h-6 w-6" />,
+      icon: <Rss className="h-6 w-6" />,
       title: "Comunicación empresarial vía WhatsApp",
       description: "Fortalecemos la interacción corporativa implementando soluciones integradas de WhatsApp."
     },
