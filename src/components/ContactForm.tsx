@@ -27,11 +27,15 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
+      console.log("Attempting to save to Firestore:", formData);
+      
       // Save data to Firebase Firestore
-      await addDoc(collection(db, "contactSubmissions"), {
+      const docRef = await addDoc(collection(db, "contactSubmissions"), {
         ...formData,
         createdAt: serverTimestamp()
       });
+      
+      console.log("Document written with ID: ", docRef.id);
       
       toast({
         title: "¡Mensaje enviado!",
