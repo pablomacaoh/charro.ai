@@ -46,9 +46,17 @@ const ContactForm = () => {
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error("Error submitting form: ", error);
+      
+      // Provide more specific error message for permission errors
+      let errorMessage = "Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.";
+      if (error instanceof Error && error.message.includes("permission")) {
+        errorMessage = "Error de permisos en Firestore. Verifica las reglas de seguridad de tu base de datos.";
+        console.error("Firebase permissions error. Please update your Firestore security rules to allow writes to the contactSubmissions collection.");
+      }
+      
       toast({
         title: "Error",
-        description: "Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.",
+        description: errorMessage,
         variant: "destructive",
       });
     } finally {
