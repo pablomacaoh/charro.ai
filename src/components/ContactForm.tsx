@@ -9,7 +9,7 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 const ContactForm = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    nombre: '',
+    name: '',
     email: '',
     message: '',
   });
@@ -27,8 +27,8 @@ const ContactForm = () => {
     // Simulate form submission
     setTimeout(() => {
       toast({
-        title: "Message sent!",
-        description: "We'll get back to you as soon as possible.",
+        title: "¡Mensaje enviado!",
+        description: "Nos comunicamremos lo antes posible.",
       });
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
@@ -40,13 +40,13 @@ const ContactForm = () => {
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider text-charro-700 uppercase bg-white rounded-full">
-            Get In Touch
+            Contactanos
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-charro-900 mb-4">
-            Contact Us
+            Envia un mensaje
           </h2>
           <p className="max-w-2xl mx-auto text-charro-600">
-            Let's discuss how we can help transform your business
+            Hablemos de cómo transformar tu negocio
           </p>
         </div>
 
@@ -54,23 +54,14 @@ const ContactForm = () => {
           {/* Contact Information */}
           <div className="lg:col-span-2 space-y-8">
             <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 flex items-center justify-center rounded-full bg-charro-100 text-accent">
-                  <MapPin size={20} />
-                </div>
-                <div>
-                  <h3 className="font-medium text-charro-900">Our Location</h3>
-                  <p className="text-charro-600">123 Business Avenue, Innovation District</p>
-                </div>
-              </div>
               
               <div className="flex items-center space-x-4">
                 <div className="w-10 h-10 flex items-center justify-center rounded-full bg-charro-100 text-accent">
                   <Mail size={20} />
                 </div>
                 <div>
-                  <h3 className="font-medium text-charro-900">Email Us</h3>
-                  <p className="text-charro-600">contact@charro.com</p>
+                  <h3 className="font-medium text-charro-900">Email</h3>
+                  <p className="text-charro-600">pablo@charro.io</p>
                 </div>
               </div>
               
@@ -79,8 +70,8 @@ const ContactForm = () => {
                   <Phone size={20} />
                 </div>
                 <div>
-                  <h3 className="font-medium text-charro-900">Call Us</h3>
-                  <p className="text-charro-600">+1 (555) 123-4567</p>
+                  <h3 className="font-medium text-charro-900">Llamanos</h3>
+                  <p className="text-charro-600">+52 552525 8718</p>
                 </div>
               </div>
             </div>
@@ -91,14 +82,14 @@ const ContactForm = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-charro-700 mb-1">
-                  Full Name
+                  Nombre Completo
                 </label>
                 <Input
                   id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your name"
+                  placeholder="Nombre completo"
                   required
                   className="w-full"
                 />
@@ -106,7 +97,7 @@ const ContactForm = () => {
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-charro-700 mb-1">
-                  Email Address
+                  Email
                 </label>
                 <Input
                   id="email"
@@ -122,14 +113,14 @@ const ContactForm = () => {
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-charro-700 mb-1">
-                  Your Message
+                  Mensaje
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="How can we help you?"
+                  placeholder="¿Cómo podemos ayudarte?"
                   rows={5}
                   required
                   className="w-full resize-none"
@@ -141,7 +132,7 @@ const ContactForm = () => {
                 className="w-full bg-accent hover:bg-accent/90 text-white"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Sending..." : "Envia"}
               </Button>
             </form>
           </div>
