@@ -33,10 +33,7 @@ const Navbar = () => {
         isScrolled ? "glass-effect" : "bg-transparent"
       )}
     >
-      <div>
-        <CowboyHat size={24} />
-        <Chats size={56} />
-      </div>
+     
       <div className="container mx-auto px-6 md:px-8 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2">
           <Compass className="h-7 w-7 text-charro-800" strokeWidth={2} />
