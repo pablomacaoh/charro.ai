@@ -1,5 +1,5 @@
 
-import { Monitor, LineChart, Database, Wrench, Globe, Zap, Rss} from 'lucide-react';
+import { Monitor, LineChart, Database, Wrench, Globe, Zap, Rss, Handshake} from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -9,7 +9,7 @@ const Services = () => {
       description: "Impulsamos la innovación en tu negocio mediante estrategias personalizadas de IA."
     },
     {
-      icon: <LineChart className="h-6 w-6" />,
+      icon: <Handshake className="h-6 w-6" />,
       title: "Integración de sistemas",
       description: "Conectamos y personalizamos tus sistemas para maximizar la eficiencia de tu operacion."
     },
