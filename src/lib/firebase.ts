@@ -5,12 +5,12 @@ import { getFirestore } from "firebase/firestore";
 // Your Firebase configuration
 // Replace these values with your actual Firebase project config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDVKUcRMQC5GLU9Xv4a4kCq2OqRXrVveDo",
+  authDomain: "charro-32d4c.firebaseapp.com",
+  projectId: "charro-32d4c",
+  storageBucket: "charro-32d4c.firebasestorage.app",
+  messagingSenderId: "252484987378",
+  appId: "1:252484987378:web:7159172c5cb4704079a36b"
 };
 
 // Initialize Firebase
