@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { Menu, X, Compass, MessageCircle } from 'lucide-react';
+import { Menu, X, Compass } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
