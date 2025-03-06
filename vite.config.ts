@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "./charro-digital-essence", // This ensures assets are loaded correctly regardless of the base path
+  base: "./charro.ai", // This ensures assets are loaded correctly regardless of the base path
   server: {
     host: "::",
     port: 8080,
