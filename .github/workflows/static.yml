@@ -52,10 +52,6 @@ jobs:
         with:
           node-version: 18
       
-      # Add this step to install Phosphor Icons
-      - name: Install Phosphor Icons
-        run: npm install @phosphor-icons/react
-      
       - name: Install dependencies
         run: npm ci
       - name: Build
