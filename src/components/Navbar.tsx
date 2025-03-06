@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 md:px-8 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2">
           {/*<Compass className="h-7 w-7 text-charro-800" strokeWidth={2} />*/}
-          <img src="/charroai_logo_circulo.png" alt="Logo" className="h-12 w-12" />
+          <img src="/charroai_logo_hat.png" alt="Logo" className="h-12 w-12" />
           <span className="font-display text-2xl font-bold tracking-tight">
             Charro.ai
           </span>
