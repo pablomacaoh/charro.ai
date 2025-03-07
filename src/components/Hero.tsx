@@ -26,18 +26,13 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up" style={{ animationDelay: '0.5s' }}>
-            <a 
-              href="#servicios" 
-              className="px-6 py-3 font-medium text-white bg-accent rounded-md hover:bg-accent/90 transition-colors duration-300 shadow-sm"
-            >
-              Servicios
-            </a>
-            <a 
-              href="#contact" 
-              className="px-6 py-3 font-medium text-charro-700 bg-transparent border border-charro-200 rounded-md hover:bg-charro-50 transition-colors duration-300"
-            >
-              Contacto
-            </a>
+              <HashLink to="#servicios" className="px-6 py-3 font-medium text-white bg-accent rounded-md hover:bg-accent/90 transition-colors duration-300 shadow-sm">
+                Servicios
+              </HashLink>
+            
+              <HashLink to="#contact" className="px-6 py-3 font-medium text-charro-700 bg-transparent border border-charro-200 rounded-md hover:bg-charro-50 transition-colors duration-300">
+                Contacto
+              </HashLink>
           </div>
         </div>
       </div>
