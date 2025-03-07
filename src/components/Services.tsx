@@ -1,5 +1,6 @@
 
 import { Monitor, LineChart, Database, Wrench, Globe, Zap, MessageCircle, Handshake} from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -36,7 +37,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-20 md:py-32 section-transition">
+    <section id="servicios" className="py-20 md:py-32 section-transition">
       <div className="container mx-auto px-6 md:px-8">
         <div className="text-center mb-16">
           <span className="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider text-charro-700 uppercase bg-charro-100 rounded-full">
@@ -57,7 +58,7 @@ const Services = () => {
               className="service-card p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"
               style={{ animationDelay: `${0.1 * (index + 1)}s` }}
             >
-              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-charro-50 text-accent mb-4">
+              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white text-accent mb-4">
                 {service.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
@@ -65,6 +66,11 @@ const Services = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <a className="text-charro-400 hover:text-charro-600 transition-colors">
+          <ArrowDown size={50} />
+        </a>
       </div>
     </section>
   );

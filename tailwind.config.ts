@@ -30,7 +30,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				charro: {
-					50: '#f5f7fa',
+					50: '#10728b4d',
 					100: '#e4e7eb',
 					200: '#cbd2d9',
 					300: '#9aa5b1',

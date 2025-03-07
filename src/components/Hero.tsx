@@ -1,16 +1,16 @@
 
 import { ArrowDown } from 'lucide-react';
+import { HashLink } from 'react-router-hash-link';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen pt-20 flex items-center relative overflow-hidden">
+    <section id="home" className="min-h-screen pt-10 flex items-center relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-blue-100/30 blur-3xl"></div>
         <div className="absolute bottom-1/3 left-1/3 w-80 h-80 rounded-full bg-gray-100/50 blur-3xl"></div>
       </div>
-      
-      <div className="container mx-auto px-6 md:px-8 py-16 md:py-24">
+      <div className="container mx-auto px-6 md:px-8 py-16 md:py-22">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-3 py-1 mb-6 text-xs font-medium tracking-wider text-charro-700 uppercase bg-charro-100 rounded-full animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Servicios y Consultoría Digital
@@ -27,7 +27,7 @@ const Hero = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-up" style={{ animationDelay: '0.5s' }}>
             <a 
-              href="#services" 
+              href="#servicios" 
               className="px-6 py-3 font-medium text-white bg-accent rounded-md hover:bg-accent/90 transition-colors duration-300 shadow-sm"
             >
               Servicios
@@ -44,8 +44,8 @@ const Hero = () => {
       
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <a href="#services" className="text-charro-400 hover:text-charro-600 transition-colors">
-          <ArrowDown size={30} />
+        <a className="text-charro-400 hover:text-charro-600 transition-colors">
+          <ArrowDown size={50} />
         </a>
       </div>
     </section>

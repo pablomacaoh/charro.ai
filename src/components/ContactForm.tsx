@@ -90,7 +90,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-charro-900">Email</h3>
-                  <p className="text-charro-600">pablo@charro.io</p>
+                  <p className="text-charro-600">pablo@charro.ai</p>
                 </div>
               </div>
               
@@ -108,7 +108,7 @@ const ContactForm = () => {
 
           {/* Contact Form */}
           <div className="lg:col-span-3 bg-white rounded-xl shadow-sm p-8 border border-gray-100">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 text-left">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-charro-700 mb-1">
                   Nombre Completo
